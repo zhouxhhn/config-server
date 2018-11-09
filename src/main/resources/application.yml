@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        prefer-ip-address: true
+    config:
+      server:
+        git:
+          uri:
+          search-paths:
+          password:
+          username:
+server:
+  port: 7001
+
+
